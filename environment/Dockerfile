@@ -1,4 +1,4 @@
-# hash:sha256:7e75793acc9514b05f14f5d3617de061419bb64ab182110761b2b48d3b6f0496
+# hash:sha256:66d57c9f2fbb4c93dac27fd8077d8787b2f305371b6ef7f8452764fe3be641b7
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/c1-vscode:4.20.0-pylint2023.10.1-copilot1.143.601
 
@@ -7,6 +7,10 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
+
+RUN conda install -y \
+        jupyterlab==4.4.3 \
+    && conda clean -ya
 
 RUN pip install -U --no-cache-dir \
     dynamax[notebooks]==1.0.1 \

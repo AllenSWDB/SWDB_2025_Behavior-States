@@ -3,6 +3,7 @@
 /results/
 /scratch/
 metadata/metadata.yml
+/code/Workshop_2_previous_year.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
