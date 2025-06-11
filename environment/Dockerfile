@@ -1,12 +1,17 @@
-# hash:sha256:66d57c9f2fbb4c93dac27fd8077d8787b2f305371b6ef7f8452764fe3be641b7
+# hash:sha256:f8d8b3bb761184d71c28f1ba40f41fafe7589fdf5d43db6cd37715595660270a
 ARG REGISTRY_HOST
-FROM $REGISTRY_HOST/codeocean/c1-vscode:4.20.0-pylint2023.10.1-copilot1.143.601
+FROM $REGISTRY_HOST/codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN conda install -y \
         jupyterlab==4.4.3 \
