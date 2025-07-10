@@ -2,16 +2,8 @@
 	"version": 1,
 	"attached_datasets": [
 		{
-			"id": "1aebbee7-d52b-4326-8afa-0ce739137b30",
-			"mount": "741137_2024-10-11"
-		},
-		{
 			"id": "a1fdfb4c-ff5b-4000-9980-41485e9cc645",
 			"mount": "759434_2025-02-04"
-		},
-		{
-			"id": "b520a18c-97ad-4c4c-a078-ef038bb88e72",
-			"mount": "742903_2024-10-22"
 		},
 		{
 			"id": "c52ca013-5e21-44d5-bf63-8fc626c96d3b",
