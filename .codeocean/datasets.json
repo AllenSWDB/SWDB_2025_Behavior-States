@@ -2,10 +2,6 @@
 	"version": 1,
 	"attached_datasets": [
 		{
-			"id": "0ef3cb90-f259-4593-be0c-5c75bcbf251b",
-			"mount": "VBN_pose_tracking_predictions"
-		},
-		{
 			"id": "cab43d4e-e1dd-437b-9c37-544f8911c4d9",
 			"mount": "visual-behavior-ophys"
 		},
