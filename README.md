@@ -1,3 +1,3 @@
-# aind-capsule-template
+2025 SWDB Day 4 Workshops - Behavior states and population decoding.
 
-Basic structure of a capsule to be customized as needed.
+GitHub repo: https://github.com/AllenSWDB/SWDB_2025_Behavior-States
